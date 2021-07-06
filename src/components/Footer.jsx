@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../custom.css";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer>
       <div className="top text-center">
@@ -557,4 +556,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
