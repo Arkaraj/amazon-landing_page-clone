@@ -1,5 +1,9 @@
 /* Header */
 
+div.content__body {
+  margin-top: -340px;
+}
+
 .header {
   height: 60px;
   display: flex;
@@ -128,15 +132,15 @@
   margin: 10px;
   padding: 20px;
   width: 100%;
-  max-height: 400px;
+  max-height: 420px;
   min-width: 80px;
   overflow: hidden;
 }
 
-.home__cateName {
+/* .home__cateName {
   height: 100px;
   margin-bottom: 10px;
-}
+} */
 
 .home__cateName > h2 {
   color: #111;
@@ -153,10 +157,20 @@
   cursor: pointer;
 }
 
+small {
+  color: #0066c0;
+}
+
 .home__category > small {
   color: #0066c0;
   text-align: left;
   cursor: pointer;
+  font-size: 13px;
+}
+
+small:hover {
+  color: #c7511f;
+  text-decoration: underline;
 }
 
 .home__image {
@@ -201,6 +215,66 @@ button.primaryButton {
 button.primaryButton:hover {
   border-color: #a88734 #9c7e31 #846a29;
   background: linear-gradient(to bottom, #f7dfa5, #ffc32a);
+}
+
+.slider__container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+}
+
+.slider__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 25px;
+  margin: 10px 0 0;
+}
+
+.slider__header > small {
+  display: block;
+  width: auto;
+  float: left;
+  text-align: right;
+  font-size: 14px;
+  padding-left: 15px;
+  line-height: 35px;
+  overflow: hidden;
+  cursor: pointer;
+  text-overflow: ellipsis;
+}
+
+.slider__product {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.image__container {
+  max-width: 400px;
+  /* height: 50%; */
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1.2rem;
+}
+
+.image__content {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 36px;
+  position: relative;
+  width: 47.5%;
+}
+
+.image__container > div > img {
+  margin-bottom: 0px;
 }
 
 /* Footer */
