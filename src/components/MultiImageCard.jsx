@@ -1,4 +1,5 @@
 import React from "react";
+import ExpImage from "../Images/image";
 
 const MultiImageCard = ({ title }) => {
   return (
@@ -8,36 +9,20 @@ const MultiImageCard = ({ title }) => {
       </div>
       <div className="image__container">
         <div>
-          <img
-            className="image__content"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg"
-            alt=""
-          />
-          <p>stuff</p>
+          <img className="image__content" src={ExpImage.headset} alt="" />
+          <p>HeadSet</p>
         </div>
         <div>
-          <img
-            className="image__content"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg"
-            alt=""
-          />
-          <p>stuff</p>
+          <img className="image__content" src={ExpImage.headset} alt="" />
+          <p>HeadSet</p>
         </div>
         <div>
-          <img
-            className="image__content"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg"
-            alt=""
-          />
-          <p>stuff</p>
+          <img className="image__content" src={ExpImage.headset} alt="" />
+          <p>HeadSet</p>
         </div>
         <div>
-          <img
-            className="image__content"
-            src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg"
-            alt=""
-          />
-          <p>stuff</p>
+          <img className="image__content" src={ExpImage.headset} alt="" />
+          <p>HeadSet</p>
         </div>
       </div>
       <small>See more</small>

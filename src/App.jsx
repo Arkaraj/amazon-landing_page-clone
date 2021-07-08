@@ -10,6 +10,7 @@ import SimpleCard from "./components/SimpleCard";
 import Button from "./components/Button";
 import SliderProduct from "./components/SliderProduct";
 import MultiImageCard from "./components/MultiImageCard";
+import InfoStrip from "./components/InfoStrip";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <NavBar />
         <CarouselSlider />
         <div className="content__body">
+          <InfoStrip />
           <div className="home">
             <div className="home__container">
               <div className="home__row">
