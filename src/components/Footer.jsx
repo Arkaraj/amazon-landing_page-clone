@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="top text-center">
-        <a href="#nav-top">Back to top</a>
+        <a href="#top">Back to top</a>
       </div>
       <div className="middle">
         <div className="center">

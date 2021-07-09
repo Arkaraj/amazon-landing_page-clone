@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ExpImage from "../Images/image";
 import { FaSearch } from "react-icons/fa";
 import Navbarext from "./Navbarext";
+import { FiMapPin } from "react-icons/fi";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 const NavBar = () => {
   return (
@@ -11,18 +13,41 @@ const NavBar = () => {
         <Link to="/">
           <img className="header__logo" src={ExpImage.logo} alt="Amazon Logo" />
         </Link>
+        <Link to="/">
+          <div className="header__option">
+            <span className="header__optionLine1">Deliver to</span>
+            <span className="header__optionLine2">
+              <FiMapPin style={{ marginLeft: -12 }} /> India
+            </span>
+          </div>
+        </Link>
 
         <div className="header__search">
+          <select>
+            <option>All</option>
+            <option>All Department</option>
+          </select>
           <input className="header__searchInput" type="text" />
           <FaSearch className="hearder__searchIcon" />
         </div>
 
         <div className="header__nav">
-          {/* to stop the redirect the user to sign inpage after sign out*/}
+          <Link to="/">
+            <div className="header__option">
+              <span className="header__optionLine2">
+                <div className="flag__icon">
+                  <div className="header__flag"></div>
+                  <IoMdArrowDropdown />
+                </div>
+              </span>
+            </div>
+          </Link>
           <Link to="/">
             <div className="header__option">
               <span className="header__optionLine1">Hello, Sign In</span>
-              <span className="header__optionLine2">Accounts & Lists</span>
+              <span className="header__optionLine2">
+                Accounts & Lists <IoMdArrowDropdown />
+              </span>
             </div>
           </Link>
           <Link to="/">

@@ -11,6 +11,7 @@ import Button from "./components/Button";
 import SliderProduct from "./components/SliderProduct";
 import MultiImageCard from "./components/MultiImageCard";
 import InfoStrip from "./components/InfoStrip";
+import AdCard from "./components/AdCard";
 
 function App() {
   return (
@@ -24,16 +25,44 @@ function App() {
             <div className="home__container">
               <div className="home__row">
                 <SimpleCard title={"AmazonBasics"} />
+                <SimpleCard title={"Oculus"} />
                 <SimpleCard title={"AmazonBasics"} />
+                <AdCard />
+              </div>
+            </div>
+          </div>
+          <div className="home">
+            <div className="home__container">
+              <div className="home__row">
+                <SimpleCard title={"AmazonBasics"} />
+                <SimpleCard title={"Oculus"} />
+                <MultiImageCard title={"Shop by Category"} />
+                <SimpleCard title={"AmazonBasics"} />
+              </div>
+            </div>
+          </div>
+          <SliderProduct title={"Top Beauty & Personal Care products"} />
+
+          <div className="home">
+            <div className="home__container">
+              <div className="home__row">
+                <MultiImageCard title={"Shop by Category"} />
+                <SimpleCard title={"Oculus"} />
                 <SimpleCard title={"AmazonBasics"} />
                 <MultiImageCard title={"Shop by Category"} />
               </div>
             </div>
           </div>
+
           <SliderProduct title={"Top Beauty & Personal Care products"} />
-          <h1>Amazon Landing page clone</h1>
-          <hr />
-          <Button title={"Sign in to see personalized recommendations"} />
+          <SliderProduct title={"Top Beauty & Personal Care products"} />
+          <SliderProduct title={"Top Beauty & Personal Care products"} />
+          <div className="amazon-end">
+            <div className="">
+              <hr />
+            </div>
+            <Button title={"Sign in to see personalized recommendations"} />
+          </div>
         </div>
         <Footer />
       </div>

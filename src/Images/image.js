@@ -9,6 +9,7 @@ import slider6 from "./slider6.jpg";
 import amazon1 from "./amazon1.jpg";
 import oculus from "./oculus.jpg";
 import headset from "./headset.jpg";
+import ad from "./amazon_ad.jpg";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -23,4 +24,5 @@ export default {
   amazon1,
   oculus,
   headset,
+  ad,
 };
