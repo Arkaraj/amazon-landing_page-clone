@@ -1,7 +1,7 @@
 import React from "react";
 import ExpImage from "../Images/image";
 
-const SimpleCard = ({ title }) => {
+const SimpleCard = ({ title, tagline }) => {
   // link: https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg
 
   return (
@@ -10,7 +10,7 @@ const SimpleCard = ({ title }) => {
         <h2>{title}</h2>
       </div>
       <img src={ExpImage.oculus} alt="" />
-      <small>Shop more</small>
+      <small>{tagline ? tagline : "Shop more"}</small>
     </div>
   );
 };

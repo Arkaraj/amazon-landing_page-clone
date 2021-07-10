@@ -24,9 +24,9 @@ function App() {
           <div className="home">
             <div className="home__container">
               <div className="home__row">
+                <MultiImageCard title={"Shop by Category"} />
                 <SimpleCard title={"AmazonBasics"} />
-                <SimpleCard title={"Oculus"} />
-                <SimpleCard title={"AmazonBasics"} />
+                <SimpleCard title={"Computers & Accessories"} />
                 <AdCard />
               </div>
             </div>
@@ -34,29 +34,32 @@ function App() {
           <div className="home">
             <div className="home__container">
               <div className="home__row">
-                <SimpleCard title={"AmazonBasics"} />
                 <SimpleCard title={"Oculus"} />
-                <MultiImageCard title={"Shop by Category"} />
-                <SimpleCard title={"AmazonBasics"} />
+                <SimpleCard title={"Get fit at home"} tagline={"Explore now"} />
+                <MultiImageCard title={"Gaming accessories"} />
+                <SimpleCard title={"Find your ideal TV"} />
               </div>
             </div>
           </div>
           <SliderProduct title={"Top Beauty & Personal Care products"} />
+          <SliderProduct title={"Our favorite Toys"} />
 
           <div className="home">
             <div className="home__container">
               <div className="home__row">
-                <MultiImageCard title={"Shop by Category"} />
-                <SimpleCard title={"Oculus"} />
-                <SimpleCard title={"AmazonBasics"} />
-                <MultiImageCard title={"Shop by Category"} />
+                <MultiImageCard title={"Comfy styles for her"} />
+                <SimpleCard title={"Shop Laptops & Tablets"} />
+                <SimpleCard title={"Explore home bedding"} />
+                <MultiImageCard title={"Gaming merchandise"} />
               </div>
             </div>
           </div>
 
-          <SliderProduct title={"Top Beauty & Personal Care products"} />
-          <SliderProduct title={"Top Beauty & Personal Care products"} />
-          <SliderProduct title={"Top Beauty & Personal Care products"} />
+          <SliderProduct title={"Amazon Top Sellers"} />
+          <SliderProduct title={"Best Sellers in Baby"} />
+          <SliderProduct title={"Stuffed Animals & Toys under $10"} />
+          <SliderProduct title={"Home Décor Under $20"} />
+          <SliderProduct title={"Popular Gifts in Baby"} />
           <div className="amazon-end">
             <div className="">
               <hr />

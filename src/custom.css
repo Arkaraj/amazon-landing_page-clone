@@ -29,6 +29,23 @@ div.content__body {
   border-radius: 10px;
 }
 
+.header__select {
+  position: static;
+  background-color: #f3f3f3;
+  background-image: none;
+  border-left: 1px solid #f3f3f3;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  height: 42px;
+  width: 52px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 6px;
+  font-size: 14px;
+  border-right: none;
+  outline: none;
+}
+
 .hearder__searchIcon {
   padding: 10px;
   transform: translateX(-25px);
@@ -36,10 +53,12 @@ div.content__body {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   font-weight: bold;
-  font-size: large;
-  background-color: #cd9042;
+  /* font-size: large; */
+  background-color: #febd69;
   color: #131921;
   cursor: pointer;
+  width: 45px;
+  height: 40px;
   box-sizing: content-box;
 }
 
@@ -47,7 +66,7 @@ div.content__body {
   height: 12px;
   padding: 15px;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   outline: none;
   width: 100%;
   box-sizing: content-box;
@@ -60,7 +79,7 @@ div.content__body {
   background-size: contain;
   display: inline-block;
   height: 1em;
-  width: 1.33333333em;
+  width: 1.33em;
   margin-right: 7px;
   background-position: 0 2px;
   font-size: 18px;
@@ -99,6 +118,12 @@ div.content__body {
   font-weight: 800;
 }
 
+.header__nav > a:hover,
+.header > a:hover {
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+
 .header__basket {
   display: flex;
   align-items: center;
@@ -134,8 +159,6 @@ div.content__body {
   flex-direction: row;
 }
 
-/* .navbar-ext > div > a */
-
 .navbar-ext > div > a {
   margin: 5px 0px 6px;
   padding: 8px 9px;
@@ -153,12 +176,6 @@ div.content__body {
 
 .navbar-ext > div > a.navbar-all {
   font-weight: bolder;
-}
-
-.header__logo:hover {
-  border: 1px solid #fff;
-  border-radius: 2px;
-  padding: 5px;
 }
 
 /* Carousel */
@@ -220,11 +237,11 @@ div.content__body {
 }
 
 small {
-  color: #0066c0;
+  color: #007185;
 }
 
 .home__category > small {
-  color: #0066c0;
+  color: #007185;
   text-align: left;
   cursor: pointer;
   font-size: 13px;
@@ -530,6 +547,12 @@ footer .middle .copy a {
   color: #ccc;
   border: 1px solid #848688;
   border-radius: 3px;
+}
+
+.footer__link {
+  font-weight: bold;
+  font-size: 14px;
+  width: 80%;
 }
 
 footer .middle .copy a:hover {

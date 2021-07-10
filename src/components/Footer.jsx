@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FiGlobe } from "react-icons/fi";
+import { BiDollar } from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -17,6 +19,9 @@ const Footer = () => {
               <Link to="/">Careers</Link>
             </li>
             <li>
+              <Link to="/">Blog</Link>
+            </li>
+            <li>
               <Link to="/">About Amazon</Link>
             </li>
             <li>
@@ -31,16 +36,13 @@ const Footer = () => {
               <h3>Make Money with Us</h3>
             </li>
             <li>
-              <Link to="/">Sell on Amazon</Link>
-            </li>
-            <li>
-              <Link to="/">Sell Your Services on Amazon</Link>
+              <Link to="/">Sell products on Amazon</Link>
             </li>
             <li>
               <Link to="/">Sell on Amazon Business</Link>
             </li>
             <li>
-              <Link to="/">Sell Your Apps on Amazon</Link>
+              <Link to="/">Sell apps on Amazon</Link>
             </li>
             <li>
               <Link to="/">Become an Affiliate</Link>
@@ -52,13 +54,12 @@ const Footer = () => {
               <Link to="/">Self-Publish with Us</Link>
             </li>
             <li>
-              <Link to="/">Become an Amazon Vendor</Link>
+              <Link to="/">Host an Amazon Hub</Link>
             </li>
             <li>
-              <Link to="/">Sell Your Subscription on Amazon</Link>
-            </li>
-            <li>
-              <Link to="/">› See all</Link>
+              <Link to="/" className="footer__link">
+                › See More Make Money with Us
+              </Link>
             </li>
           </ul>
           <ul>
@@ -66,19 +67,10 @@ const Footer = () => {
               <h3>Amazon Payment Products</h3>
             </li>
             <li>
-              <Link to="/">Amazon Rewards Visa Signature Cards</Link>
-            </li>
-            <li>
-              <Link to="/">Amazon.com Store Card</Link>
-            </li>
-            <li>
-              <Link to="/">Amazon.com Corporate Credit Line</Link>
+              <Link to="/">Amazon Business Card</Link>
             </li>
             <li>
               <Link to="/">Shop with Points</Link>
-            </li>
-            <li>
-              <Link to="/">Credit Card Marketplace</Link>
             </li>
             <li>
               <Link to="/">Reload Your Balance</Link>
@@ -92,6 +84,9 @@ const Footer = () => {
               <h3>Let Us Help You</h3>
             </li>
             <li>
+              <Link to="/">Amazon and COVID-19</Link>
+            </li>
+            <li>
               <Link to="/">Your Account</Link>
             </li>
             <li>
@@ -99,9 +94,6 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/">Shipping Rates &amp; Policies</Link>
-            </li>
-            <li>
-              <Link to="/">Amazon Prime</Link>
             </li>
             <li>
               <Link to="/">Returns &amp; Replacements</Link>
@@ -123,7 +115,12 @@ const Footer = () => {
           </li>
           <li>
             <Link to="/" className="select">
-              <i className="fa fa-globe" aria-hidden="true" /> English
+              <FiGlobe /> English
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="select">
+              <BiDollar /> USD - U.S. Dollar
             </Link>
           </li>
           <li>

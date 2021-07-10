@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ExpImage from "../Images/image";
-import { FaSearch } from "react-icons/fa";
+import { BsSearch } from "react-icons/bs";
 import Navbarext from "./Navbarext";
 import { FiMapPin } from "react-icons/fi";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -23,12 +23,39 @@ const NavBar = () => {
         </Link>
 
         <div className="header__search">
-          <select>
-            <option>All</option>
-            <option>All Department</option>
+          <select className="header__select">
+            All
+            <option>All Departments</option>
+            <option>Arts &amp; Crafts</option>
+            <option>Automotive</option>
+            <option>Baby</option>
+            <option>Beauty &amp; Personal Care</option>
+            <option>Books</option>
+            <option>Computers</option>
+            <option>Digital Music</option>
+            <option>Electronics</option>
+            <option>Kindle Store</option>
+            <option>Prime Video</option>
+            <option>Women's Fashion</option>
+            <option>Men's Fashion</option>
+            <option>Girls' Fashion</option>
+            <option>Boys' Fashion</option>
+            <option>Deals</option>
+            <option>Health &amp; Household</option>
+            <option>Home &amp; Kitchen</option>
+            <option>Industrial &amp; Scientific</option>
+            <option>Luggage</option>
+            <option>Movies &amp; TV</option>
+            <option>Music, CDs &amp; Vinyl</option>
+            <option>Pet Supplies</option>
+            <option>Software</option>
+            <option>Sports &amp; Outdoors</option>
+            <option>Tools &amp; Home Improvement</option>
+            <option>Toys &amp; Games</option>
+            <option>Video Games</option>
           </select>
           <input className="header__searchInput" type="text" />
-          <FaSearch className="hearder__searchIcon" />
+          <BsSearch className="hearder__searchIcon" />
         </div>
 
         <div className="header__nav">
@@ -56,11 +83,6 @@ const NavBar = () => {
               <span className="header__optionLine2">& Orders</span>
             </div>
           </Link>
-
-          <div className="header__option">
-            <span className="header__optionLine1">Your</span>
-            <span className="header__optionLine2">Prime</span>
-          </div>
           <Link className="header_cart" to="/">
             <span className="header__basketCount">0</span>
             <span className="cart_heading">Cart</span>
