@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ExpImage from "../Images/image";
 import { BsSearch } from "react-icons/bs";
 import Navbarext from "./Navbarext";
+import NavBarCard from "./NavBarCard";
 import { FiMapPin } from "react-icons/fi";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 const NavBar = () => {
+  const ref = useRef(null);
+  const [hovered, setHovered] = useState(false);
+
+  const enter = () => setHovered(true);
+  const exit = () => setHovered(false);
+
+  useEffect(() => {
+    ref.current.addEventListener("mouseenter", enter);
+    ref.current.addEventListener("mouseleave", exit);
+
+    return () => {
+      ref.current.removeEventListener("mouseenter", enter);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      ref.current.removeEventListener("mouseleave", exit);
+    };
+  }, [ref]);
+
   return (
     <>
       <div className="header">
@@ -70,7 +88,7 @@ const NavBar = () => {
             </div>
           </Link>
           <Link to="/">
-            <div className="header__option">
+            <div className="header__option" ref={ref}>
               <span className="header__optionLine1">Hello, Sign In</span>
               <span className="header__optionLine2">
                 Accounts & Lists <IoMdArrowDropdown />
@@ -90,6 +108,7 @@ const NavBar = () => {
         </div>
       </div>
       <Navbarext />
+      {hovered ? <NavBarCard /> : null}
     </>
   );
 };

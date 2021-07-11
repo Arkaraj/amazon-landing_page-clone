@@ -24,7 +24,13 @@ function App() {
           <div className="home">
             <div className="home__container">
               <div className="home__row">
-                <MultiImageCard title={"Shop by Category"} />
+                <MultiImageCard
+                  title={"Shop by Category"}
+                  pName1={"headset"}
+                  pName2={"headset"}
+                  pName3={"headset"}
+                  pName4={"headset"}
+                />
                 <SimpleCard title={"AmazonBasics"} />
                 <SimpleCard title={"Computers & Accessories"} />
                 <AdCard />
@@ -36,7 +42,13 @@ function App() {
               <div className="home__row">
                 <SimpleCard title={"Oculus"} />
                 <SimpleCard title={"Get fit at home"} tagline={"Explore now"} />
-                <MultiImageCard title={"Gaming accessories"} />
+                <MultiImageCard
+                  title={"Gaming accessories"}
+                  pName1={"headset"}
+                  pName2={"headset"}
+                  pName3={"headset"}
+                  pName4={"headset"}
+                />
                 <SimpleCard title={"Find your ideal TV"} />
               </div>
             </div>
@@ -47,10 +59,22 @@ function App() {
           <div className="home">
             <div className="home__container">
               <div className="home__row">
-                <MultiImageCard title={"Comfy styles for her"} />
+                <MultiImageCard
+                  title={"Comfy styles for her"}
+                  pName1={"headset"}
+                  pName2={"headset"}
+                  pName3={"headset"}
+                  pName4={"headset"}
+                />
                 <SimpleCard title={"Shop Laptops & Tablets"} />
                 <SimpleCard title={"Explore home bedding"} />
-                <MultiImageCard title={"Gaming merchandise"} />
+                <MultiImageCard
+                  title={"Gaming merchandise"}
+                  pName1={"headset"}
+                  pName2={"headset"}
+                  pName3={"headset"}
+                  pName4={"headset"}
+                />
               </div>
             </div>
           </div>

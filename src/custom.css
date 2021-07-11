@@ -44,6 +44,14 @@ div.content__body {
   font-size: 14px;
   border-right: none;
   outline: none;
+  cursor: pointer;
+}
+
+.header__select:hover {
+  background-color: #dadada;
+  border-left-color: #dadada;
+  border-top-color: #dadada;
+  border-bottom-color: #dadada;
 }
 
 .hearder__searchIcon {
@@ -141,6 +149,71 @@ div.content__body {
   display: flex;
   align-items: center;
   color: white;
+}
+
+.header__card {
+  width: 500px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  background: #fff;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 14px;
+  margin: 0;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 13%);
+  zoom: 1;
+  transform: translate(190%, -10%);
+  font-size: 13px;
+  font-family: inherit;
+  line-height: normal;
+  border-radius: 3px;
+}
+
+.header__card-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 29%;
+}
+
+.header__link {
+  font-size: 11px;
+  text-decoration: none;
+  color: #05a;
+  display: inline;
+}
+
+.header__card-body {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.card-left,
+.card-right {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.card-right {
+  border-left: 1px solid #dadada;
+}
+
+.header__title {
+  color: #0f1111;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header__link2 {
+  color: #444444;
+  font-size: 13px;
+  padding: 0 0 7px;
 }
 
 .navbar-ext {
@@ -247,7 +320,9 @@ small {
   font-size: 13px;
 }
 
-small:hover {
+small:hover,
+.header__link:hover,
+.header__link2:hover {
   color: #c7511f;
   text-decoration: underline;
 }
@@ -547,6 +622,10 @@ footer .middle .copy a {
   color: #ccc;
   border: 1px solid #848688;
   border-radius: 3px;
+}
+
+footer .middle .copy a:hover {
+  text-decoration: none;
 }
 
 .footer__link {
