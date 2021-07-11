@@ -501,6 +501,10 @@ button.primaryButton:hover {
   line-height: 18px;
 }
 
+.image__container > div > p {
+  text-transform: capitalize;
+}
+
 .amazon-end {
   display: flex;
   flex-direction: column;

@@ -1,9 +1,8 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ExpImage from "../Images/image";
 
-const SliderProduct = ({ title }) => {
+const SliderProduct = ({ title, datalist }) => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -33,76 +32,14 @@ const SliderProduct = ({ title }) => {
           <small>Shop more</small>
         </div>
         <Carousel responsive={responsive}>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
-          <img
-            className="slider__product"
-            src={ExpImage.amazon1}
-            alt="amazon slider"
-          ></img>
+          {datalist.map((data, indx) => (
+            <img
+              key={indx + 1}
+              className="slider__product"
+              src={`Images/${data.imagePath}`}
+              alt="amazon slider"
+            ></img>
+          ))}
         </Carousel>
       </div>
     </>
