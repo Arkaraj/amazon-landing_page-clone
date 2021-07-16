@@ -72,12 +72,12 @@ function App() {
               <div className="home__row">
                 <SimpleCard
                   title={"AmazonBasics"}
-                  imgPath={"./Images/amazonbasic.jpg"}
+                  imgPath={"amazonbasic.jpg"}
                 />
                 <MultiImageCard data={multiCardData1} />
                 <SimpleCard
                   title={"Computers & Accessories"}
-                  imgPath={"./Images/amazonbasic2.jpg"}
+                  imgPath={"amazonbasic2.jpg"}
                 />
                 <AdCard />
               </div>
@@ -90,7 +90,7 @@ function App() {
                 <SimpleCard
                   title={"Get fit at home"}
                   tagline={"Explore now"}
-                  imgPath={"./Images/amazonbasic3.jpg"}
+                  imgPath={"amazonbasic3.jpg"}
                 />
                 <MultiImageCard
                   data={multiCardData1}
@@ -98,7 +98,7 @@ function App() {
                 />
                 <SimpleCard
                   title={"Find your ideal TV"}
-                  imgPath={"./Images/amazonbasic4.jpg"}
+                  imgPath={"amazonbasic4.jpg"}
                 />
               </div>
             </div>
@@ -118,11 +118,11 @@ function App() {
                 <MultiImageCard data={multiCardData2} />
                 <SimpleCard
                   title={"Shop Laptops & Tablets"}
-                  imgPath={"./Images/laptop.jpg"}
+                  imgPath={"laptop.jpg"}
                 />
                 <SimpleCard
                   title={"Explore home bedding"}
-                  imgPath={"./Images/bedding.jpg"}
+                  imgPath={"bedding.jpg"}
                 />
                 <MultiImageCard
                   title={"Gaming merchandise"}

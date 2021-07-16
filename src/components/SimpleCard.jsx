@@ -9,7 +9,7 @@ const SimpleCard = ({ title, imgPath, tagline }) => {
       <div className="home__cateName">
         <h2>{title}</h2>
       </div>
-      <img src={imgPath ? imgPath : "./Images/oculus.jpg"} alt="" />
+      <img src={imgPath ? `Images/${imgPath}` : "./Images/oculus.jpg"} alt="" />
       <small>{tagline ? tagline : "Shop more"}</small>
     </div>
   );
